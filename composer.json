@@ -17,5 +17,10 @@
         "psr-4": {
             "l1n6yun\\DingTalk\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "l1n6yun\\DingTalk\\Tests\\": "tests"
+        }
     }
 }
