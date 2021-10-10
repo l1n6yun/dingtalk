@@ -1,0 +1,21 @@
+{
+    "name": "l1n6yun/dingtalk",
+    "authors": [
+        {
+            "name": "l1n6yun",
+            "email": "l1n6yun@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.3",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "l1n6yun\\DingTalk\\": "src"
+        }
+    }
+}
