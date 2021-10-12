@@ -1,11 +1,15 @@
 {
     "name": "l1n6yun/dingtalk",
+    "description": "ding talk robot",
+    "keywords": ["ding talk", "robot"],
+    "license": "MIT",
     "authors": [
         {
             "name": "l1n6yun",
             "email": "l1n6yun@gmail.com"
         }
     ],
+    "minimum-stability": "stable",
     "require": {
         "guzzlehttp/guzzle": "^7.3",
         "ext-json": "*"
