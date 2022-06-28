@@ -116,6 +116,17 @@ $message->addLinks($title, $messageURL, $picURL)
 $message->addLinks($title, $messageURL, $picURL);
 ```
 
+自定义模板消息
+
+```php
+$message = Template::make("上班了，打卡成功");
+$message->addMessage('班次时间','06月28日 09:00上班');
+$message->addMessage('打卡方式','Wi-Fi打卡');
+$message->addMessage('打卡WiFi', 'l1n6yun');
+```
+
+![Template](./img/Template.png)
+
 ## Reference
 
 https://developers.dingtalk.com/document/robots/custom-robot-access
