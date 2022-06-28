@@ -17,8 +17,9 @@ class FeedCardTest extends TestCase
             "title" => $title,
             "messageURL" => $messageURL,
             "picURL" => $picURL
-        ]])->addLinks($title, $messageURL, $picURL)
-            ->addLinks($title, $messageURL, $picURL);
+        ]]);
+        $message->addLinks($title, $messageURL, $picURL);
+        $message->addLinks($title, $messageURL, $picURL);
         $expected = [
             'msgtype' => 'feedCard',
             'feedCard' => [
@@ -55,8 +56,9 @@ class FeedCardTest extends TestCase
             "title" => $title,
             "messageURL" => $messageURL,
             "picURL" => $picURL
-        ]]))->addLinks($title, $messageURL, $picURL)
-            ->addLinks($title, $messageURL, $picURL);
+        ]]));
+        $message->addLinks($title, $messageURL, $picURL);
+        $message->addLinks($title, $messageURL, $picURL);
         $expected = [
             'msgtype' => 'feedCard',
             'feedCard' => [

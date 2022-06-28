@@ -11,9 +11,9 @@ class ActionCardTest extends TestCase
     {
         $title = '乔布斯 20 年前想打造一间苹果咖啡厅，而它正是 Apple Store 的前身';
         $text = "![screenshot](https://gw.alicdn.com/tfs/TB1ut3xxbsrBKNjSZFpXXcXhFXa-846-786.png) \n### 乔布斯 20 年前想打造的苹果咖啡厅\nApple Store 的设计正从原来满满的科技感走向生活化，而其生活化的走向其实可以追溯到 20 年前苹果一个建立咖啡馆的计划";
-        $message = ActionCard::make($title, $text, 0)
-            ->setSingleTitle('阅读全文')
-            ->setSingleURL('https://www.dingtalk.com');
+        $message = ActionCard::make($title, $text, 0);
+        $message->setSingleTitle('阅读全文');
+        $message->setSingleURL('https://www.dingtalk.com');
         $expected = [
             'msgtype' => 'actionCard',
             'actionCard' => [
@@ -33,9 +33,9 @@ class ActionCardTest extends TestCase
     {
         $title = '乔布斯 20 年前想打造一间苹果咖啡厅，而它正是 Apple Store 的前身';
         $text = "![screenshot](https://gw.alicdn.com/tfs/TB1ut3xxbsrBKNjSZFpXXcXhFXa-846-786.png) \n### 乔布斯 20 年前想打造的苹果咖啡厅\nApple Store 的设计正从原来满满的科技感走向生活化，而其生活化的走向其实可以追溯到 20 年前苹果一个建立咖啡馆的计划";
-        $message = (new ActionCard($title, $text, 0))
-            ->setSingleTitle('阅读全文')
-            ->setSingleURL('https://www.dingtalk.com');
+        $message = (new ActionCard($title, $text, 0));
+        $message->setSingleTitle('阅读全文');
+        $message->setSingleURL('https://www.dingtalk.com');
         $expected = [
             'msgtype' => 'actionCard',
             'actionCard' => [
