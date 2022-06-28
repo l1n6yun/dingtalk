@@ -2,7 +2,7 @@
     "name": "l1n6yun/dingtalk",
     "description": "ding talk robot",
     "keywords": ["ding talk", "robot"],
-	"type": "library",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
