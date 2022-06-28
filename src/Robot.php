@@ -9,6 +9,11 @@ use l1n6yun\DingTalk\Exceptions\BusinessExceptions;
 class Robot
 {
     /**
+     * @var Robot[]
+     */
+    private static array $robots = [];
+
+    /**
      * 访问令牌
      * @var string
      */
@@ -35,7 +40,7 @@ class Robot
      */
     public static function create(string $accessToken, $secret = null): Robot
     {
-        return new static($accessToken, $secret);
+        return self::$robots[$accessToken] ?? self::$robots[$accessToken] = new static($accessToken, $secret);
     }
 
     /**
